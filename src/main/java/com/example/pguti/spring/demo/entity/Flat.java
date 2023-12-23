@@ -3,6 +3,7 @@ package com.example.pguti.spring.demo.entity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Setter;
 
 @Entity
 @Data
@@ -20,6 +21,8 @@ public class Flat {
     private int square;
     @Column(name = "quantity", nullable = false)
     private int quantity;
+    @Column(name = "numberFloor", nullable = false)
+    private int numberFloor;
 
     public Flat() {
         this.square = DEFAULT_SQUARE;

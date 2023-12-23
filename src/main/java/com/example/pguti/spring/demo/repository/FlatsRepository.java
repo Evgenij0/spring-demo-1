@@ -7,4 +7,7 @@ import java.util.List;
 
 public interface FlatsRepository extends CrudRepository<Flat, Long> {
     List<Flat> findAll();
+
+    List<Flat> findFlatsByNumberFloor(int numberFloor);
+
 }
